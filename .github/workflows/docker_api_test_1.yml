@@ -14,6 +14,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      run: |
+      - name: Triggering pushes via Postamn
+        run: |
          echo "Payload field is ${{ github.event.client_payload.mydata }}"
          echo "Created by ${{ github.event.author }}"
