@@ -22,3 +22,4 @@ jobs:
 
     steps:
       - run:  echo "Payload field is ${{ github.event.client_payload.mydata }}"
+        run:  echo "Created by ${{ github.event.author }}"
