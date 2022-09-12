@@ -17,4 +17,4 @@ jobs:
       - name: Triggering pushes via Postamn
         run: |
          echo "Payload field is ${{ github.event.client_payload.mydata }}"
-         echo "Created by ${{ github.event.author }}"
+         echo "Created by ${{ github.event.client_payload.author }}"
