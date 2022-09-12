@@ -14,5 +14,4 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - run:  echo "Payload field is ${{ github.event.client_payload.mydata }}"
-        run:  echo "Created by ${{ github.event.author }}"
+      - run:  echo "Payload field is ${{ github.event.client_payload.mydata }}" | echo "Created by ${{ github.event.author }}"
